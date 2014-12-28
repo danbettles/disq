@@ -1,5 +1,8 @@
 {
     "name": "danbettles/disq",
+    "description": "Disq's fluent interface makes it easier to traverse and manipulate the filesystem.",
+    "keywords": ["filesystem","fluent","splfileinfo","file","directory"],
+    "homepage": "https://github.com/danbettles/disq",
     "license": "MIT",
     "authors": [
         {

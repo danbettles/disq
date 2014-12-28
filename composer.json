@@ -1,0 +1,27 @@
+{
+    "name": "danbettles/disq",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Bettles",
+            "email": "danbettles@yahoo.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Disq\\": "src/Disq/"
+        },
+        "files": [
+            "src/disq.php"
+        ]
+    },
+    "scripts": {
+        "project:test": "phpunit -c tests",
+        "project:testdox": "phpunit -c tests --testdox",
+        "project:lint": "phpcs --standard=./phpcs.xml --extensions=php --ignore=vendor .",
+        "project:validate": "composer project:test && composer project:lint"
+    }
+}

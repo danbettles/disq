@@ -22,9 +22,9 @@
         ]
     },
     "scripts": {
-        "project:test": "phpunit -c tests",
-        "project:testdox": "phpunit -c tests --testdox",
-        "project:lint": "phpcs --standard=./phpcs.xml --extensions=php --ignore=vendor .",
-        "project:validate": "composer project:test && composer project:lint"
+        "app:test": "phpunit -c tests",
+        "app:show-testdox": "phpunit -c tests --testdox",
+        "app:lint": "phpcs --standard=./phpcs.xml --extensions=php --ignore=vendor .",
+        "app:check-quality": "composer run-script app:test && composer run-script app:lint"
     }
 }
